@@ -29,6 +29,7 @@ public class InfoController {
 	@RequestMapping("/findAll")
 	@ResponseBody
 	public List<Info> findAll(){
+		System.out.println("excute all");
 		return infoService.findAll();
 	}
 	@RequestMapping("/index")
